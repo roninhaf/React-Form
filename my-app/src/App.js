@@ -12,9 +12,11 @@ class App extends Component {
   }
 
   handleChange(event) {
-    this.setState(
-    {[event.target.name]: event.target.value  }
-    )}
+    const {name, value} = event.target
+    this.setState({
+        [name]: value
+    })
+  }
 
   render() {
     return (
