@@ -1,3 +1,53 @@
-.App {
+.genDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 3fr;
+}
+
+.headerImg {
+  background-image: url(airplane.jpg);
+  background-position: top;
+  background-size: cover;
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  color: white;
+  justify-content: center;
   text-align: center;
+  align-content: space-evenly;
+  /* align-items: center; */
+  /* text-shadow:5px 5px 10px #fc7f4f; */
+}
+
+.headerImg h1 {
+  font-size: 80px;
+}
+
+.headerImg h2 {
+  font-size: 40px;
+}
+
+main {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 20px;
+  background-color: rgb(252, 252, 252);
+  box-shadow:15px 15px 10px grey;  
+}
+
+main h1 {
+  margin-left: 10px;
+}
+
+form {
+  margin: 20px 10px;
+}
+
+form input, select, button, .entInfo {
+  margin: 10px 10px;
+}
+
+hr {
+  width: 100%;
 }
