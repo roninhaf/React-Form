@@ -144,11 +144,11 @@ class App extends Component {
                     <p>Your name: {this.state.firstName} {this.state.lastName}</p>
                     <p>Your age: {this.state.age}</p>
                     <p>Your gender: {this.state.gender}</p>
-                    <p>Your destination: {this.state.destination}</p>
-                    <p>Your dietary restrictions: <i>{this.state.dietary.join(", ")}</i></p>
-                    <p>Vegan: <i>{this.state.Vegan ? "Yes" : "No"}</i></p>
-                    <p>Kosher: <i>{this.state.Kosher ? "Yes" : "No"}</i></p>
-                    <p>Lactose Free: <i>{this.state.LactoseFree ? "Yes" : "No"}</i></p>
+                    <p>Your destination: <strong>{this.state.destination}</strong></p>
+                    <p>Your dietary restrictions: <em>{this.state.dietary.join(", ")}</em></p>
+                    <p>Vegan: <em>{this.state.Vegan ? "Yes" : "No"}</em></p>
+                    <p>Kosher: <em>{this.state.Kosher ? "Yes" : "No"}</em></p>
+                    <p>Lactose Free: <em>{this.state.LactoseFree ? "Yes" : "No"}</em></p>
                 </div>
             </main>
 
