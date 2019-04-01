@@ -35,7 +35,7 @@ class App extends Component {
   
   render() {
       return (
-          <div className="genDiv">
+        <div className="genDiv">
             <div className="headerImg">
                 <div><h1>This is your new airline</h1></div>
                 <div><h2>Where will you go ?</h2></div>
@@ -75,7 +75,6 @@ class App extends Component {
                             type="radio" 
                             name="gender"
                             value="Male"
-                            checked={this.state.gender === "male"}
                             onChange={this.handleChange}
                         /> Male
                     </label>
@@ -87,7 +86,6 @@ class App extends Component {
                             type="radio" 
                             name="gender"
                             value="Female"
-                            checked={this.state.gender === "female"}
                             onChange={this.handleChange}
                         /> Female
                     </label>
@@ -147,15 +145,14 @@ class App extends Component {
                     <p>Your age: {this.state.age}</p>
                     <p>Your gender: {this.state.gender}</p>
                     <p>Your destination: {this.state.destination}</p>
-                    <p>Your dietary restrictions: {this.state.dietary.join(", ")}</p>
-                    
-                    <p>Vegan: {this.state.Vegan ? "Yes" : "No"}</p>
-                    <p>Kosher: {this.state.Kosher ? "Yes" : "No"}</p>
-                    <p>Lactose Free: {this.state.LactoseFree ? "Yes" : "No"}</p>
+                    <p>Your dietary restrictions: <i>{this.state.dietary.join(", ")}</i></p>
+                    <p>Vegan: <i>{this.state.Vegan ? "Yes" : "No"}</i></p>
+                    <p>Kosher: <i>{this.state.Kosher ? "Yes" : "No"}</i></p>
+                    <p>Lactose Free: <i>{this.state.LactoseFree ? "Yes" : "No"}</i></p>
                 </div>
             </main>
 
-          </div>
+        </div>
       )
   }
 }

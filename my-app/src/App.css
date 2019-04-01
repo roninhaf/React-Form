@@ -46,8 +46,12 @@ form {
   margin: 20px 10px;
 }
 
-form input, select, button, .entInfo {
+form input, select, button {
   margin: 10px 10px;
+}
+
+.entInfo > * {
+  margin: 20px 10px;
 }
 
 hr {
