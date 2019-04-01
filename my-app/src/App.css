@@ -1,3 +1,8 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 .genDiv {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -13,11 +18,8 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
   color: white;
-  justify-content: center;
   text-align: center;
-  align-content: space-evenly;
-  /* align-items: center; */
-  /* text-shadow:5px 5px 10px #fc7f4f; */
+  align-items: center;
 }
 
 .headerImg h1 {
@@ -32,7 +34,7 @@ main {
   grid-column: 2;
   grid-row: 2;
   margin: 20px;
-  background-color: rgb(252, 252, 252);
+  background-color: rgb(240, 239, 239);
   box-shadow:15px 15px 10px grey;  
 }
 

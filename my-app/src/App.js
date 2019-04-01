@@ -24,7 +24,7 @@ class App extends Component {
           this.setState(prevState => {
               return {
                 [name]: checked,
-                dietary: prevState.dietary.concat(name)
+                dietary: checked ? prevState.dietary.concat(name) : prevState.dietary.slice(0, prevState.dietary.indexOf(name)).concat(prevState.dietary.slice(prevState.dietary.indexOf(name)+1))
               }  
           })
       :
@@ -37,8 +37,8 @@ class App extends Component {
       return (
           <div className="genDiv">
             <div className="headerImg">
-                <h1>This is your new airline</h1>
-                <h2>Where will you go ?</h2>
+                <div><h1>This is your new airline</h1></div>
+                <div><h2>Where will you go ?</h2></div>
             </div>
 
             <main>
@@ -113,7 +113,7 @@ class App extends Component {
                             type="checkbox"
                             name="Vegan"
                             onChange={this.handleChange}
-                            checked={this.state.isVegan}
+                            checked={this.state.Vegan}
                         /> Vegan?
                     </label>
                     <br />
@@ -123,7 +123,7 @@ class App extends Component {
                             type="checkbox"
                             name="Kosher"
                             onChange={this.handleChange}
-                            checked={this.state.isKosher}
+                            checked={this.state.Kosher}
                         /> Kosher?
                     </label>
                     <br />
@@ -133,7 +133,7 @@ class App extends Component {
                             type="checkbox"
                             name="LactoseFree"
                             onChange={this.handleChange}
-                            checked={this.state.isLactoseFree}
+                            checked={this.state.LactoseFree}
                         /> Lactose Free?
                     </label>
                     <br />
