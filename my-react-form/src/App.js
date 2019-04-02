@@ -169,52 +169,44 @@ class App extends Component {
 
                         <h2>Entered information:</h2>
 
-                        <p>Your name: 
-                            <strong style={renderedInfoStyle}>
-                                {this.state.firstName} {this.state.lastName}
-                            </strong>
+                        <p>Your name: <strong style={renderedInfoStyle}>
+                                        {this.state.firstName} {this.state.lastName}
+                                    </strong>
                         </p>
 
-                        <p>Your age: 
-                            <span style={renderedInfoStyle}>
-                                {this.state.age}
-                            </span>
+                        <p>Your age: <span style={renderedInfoStyle}>
+                                        {this.state.age}
+                                    </span>
                         </p>
 
-                        <p>Your gender: 
-                            <span style={renderedInfoStyle}>
-                                {this.state.gender}
-                            </span>
+                        <p>Your gender: <span style={renderedInfoStyle}>
+                                            {this.state.gender}
+                                        </span>
                         </p>
 
-                        <p>Your destination: 
-                            <strong style={renderedInfoStyle}>
-                                {this.state.destination}
-                            </strong>
+                        <p>Your destination: <strong style={renderedInfoStyle}>
+                                                {this.state.destination}
+                                            </strong>
                         </p>
 
-                        <p>Your dietary restrictions: 
-                            <em style={renderedInfoStyle}>
-                                {this.state.dietary.join(", ")}
-                            </em>
+                        <p>Your dietary restrictions: <em style={renderedInfoStyle}>
+                                                        {this.state.dietary.join(", ")}
+                                                    </em>
                         </p>
 
-                        <p>Vegan: 
-                            <em style={renderedInfoStyle}>
-                                {this.state.Vegan ? "Yes" : "No"}
-                            </em>
+                        <p>Vegan: <em style={renderedInfoStyle}>
+                                    {this.state.Vegan ? "Yes" : "No"}
+                                </em>
                         </p>
 
-                        <p>Kosher: 
-                            <em style={renderedInfoStyle}>
-                                {this.state.Kosher ? "Yes" : "No"}
-                            </em>
+                        <p>Kosher: <em style={renderedInfoStyle}>
+                                    {this.state.Kosher ? "Yes" : "No"}
+                                </em>
                         </p>
 
-                        <p>Lactose Free: 
-                            <em style={renderedInfoStyle}>
-                                {this.state.LactoseFree ? "Yes" : "No"}
-                            </em>
+                        <p>Lactose Free: <em style={renderedInfoStyle}>
+                                            {this.state.LactoseFree ? "Yes" : "No"}
+                                        </em>
                         </p>
 
                     </div>
